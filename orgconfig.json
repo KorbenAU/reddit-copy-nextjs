@@ -1,0 +1,24 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "Classsed",
+  "password": "root",
+  "database": "readit",
+  "synchronize": true,
+  "logging": true,
+  "entities": [
+    "entities/**/*.ts"
+  ],
+  "migrations": [
+    "migrations/**/*.ts"
+  ],
+  "subscribers": [
+    "subscribers/**/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "entities",
+    "migrationsDir": "migrations",
+    "subscribersDir": "subscribers"
+  }
+}
